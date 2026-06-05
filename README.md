@@ -1,131 +1,249 @@
-# 🚀 Excel Analysis Platform
+# 📊 DataSheet Analytics
 
-A modern, interactive **data analysis dashboard** built with React that allows users to upload Excel/CSV files, explore data, and generate insights instantly.
+### Transforming Spreadsheet Data into Interactive Visual Insights
 
-🔗 **Live Repository:** https://github.com/Akshat-shukla18/excelanalysis
+🌐 Live Demo:  https://datasheeet.netlify.app/
+
+---
+
+## 🚀 Overview
+
+DataSheet Analytics is a modern React-based spreadsheet analysis platform that enables users to upload CSV and Excel files, explore data, generate visualizations, and extract meaningful insights directly in the browser.
+
+The application focuses on simplicity and accessibility by performing data processing on the client side, allowing users to analyze datasets without requiring complex setup or dedicated analytics tools.
 
 ---
 
 ## ✨ Features
 
-### 📂 Smart File Upload
+### 📂 Spreadsheet Upload
 
-* Upload **CSV, XLSX, XLS** files
-* Select specific **sheets**
-* Define **custom ranges (A1 format)**
-* Choose **header row dynamically**
+Supports:
 
----
+* CSV (.csv)
+* Excel (.xlsx)
+* Excel (.xls)
 
-### 📊 Data Profiling Engine
-
-Get instant insights about your dataset:
-
-* Data type detection (number, text, date)
-* Missing values & blanks analysis
-* Distinct value counts
-* Duplicate detection
-* Outlier identification
+Users can upload files and instantly preview their contents.
 
 ---
 
-### 📈 Advanced Analytics
+### 📄 Sheet Selection
 
-* Top/Bottom **N filtering**
-* Dynamic filtering & sorting
-* Interactive data exploration
+For Excel workbooks containing multiple sheets:
 
----
-
-### 🧠 Scenario Management
-
-* Save filter states as **snapshots**
-* Reapply scenarios instantly
+* Detect available sheets
+* Select specific worksheets
+* Analyze only relevant data
 
 ---
 
-### 📤 Export Functionality
+### 🔢 Custom Range Selection
 
-* Export filtered datasets back to **Excel**
-* Clean and structured output
+Analyze specific portions of uploaded spreadsheets.
+
+Examples:
+
+```text
+A1:D100
+B2:F200
+C5:H500
+```
+
+This allows users to focus on the exact data they need.
 
 ---
 
-## 🛠️ Tech Stack
+### 🏷 Dynamic Header Row Selection
 
-* **Frontend:** React.js
-* **Data Processing:** xlsx
-* **Styling:** Custom CSS (glassmorphism + modern UI)
+Different spreadsheets have different structures.
+
+Users can:
+
+* Choose which row contains column headers
+* Handle non-standard datasets
+* Improve analysis accuracy
 
 ---
 
-## ⚡ Getting Started
+### 📊 Interactive Visualizations
 
-### 1. Install dependencies
+Generate graphical insights using Chart.js.
+
+Supported charts:
+
+* Bar Charts
+* Line Charts
+* Pie Charts
+* Doughnut Charts
+* Area Charts
+
+Features:
+
+* Dynamic chart rendering
+* Responsive visualizations
+* Real-time chart updates
+
+---
+
+### 📈 Data Exploration Dashboard
+
+Explore uploaded datasets through:
+
+* Data previews
+* Column summaries
+* Graphical representations
+* Interactive filtering
+
+---
+
+### 🔐 Firebase Authentication
+
+Secure user authentication powered by Firebase.
+
+Features include:
+
+* User Registration
+* Login
+* Authentication Persistence
+* Protected Routes
+
+---
+
+## 🎯 Purpose
+
+Many users work with spreadsheets but lack simple tools for quickly visualizing and understanding their data.
+
+DataSheet Analytics bridges this gap by providing a lightweight, browser-based analytics experience that transforms raw spreadsheet data into meaningful visual insights.
+
+---
+
+## 🛠 Technology Stack
+
+### Frontend
+
+* React.js
+* JavaScript (ES6+)
+* HTML5
+* CSS3
+
+### Authentication
+
+* Firebase Authentication
+
+### Data Processing
+
+* XLSX Library
+* CSV Parsing
+
+### Visualization
+
+* Chart.js
+* React Chart.js 2
+
+### Deployment
+
+* Vercel / Netlify
+
+---
+
+## 📂 Project Structure
+
+```text
+DataSheet-Analytics/
+│
+├── public/
+│
+├── src/
+│   ├── components/
+│   ├── pages/
+│   ├── charts/
+│   ├── firebase/
+│   ├── utils/
+│   └── assets/
+│
+├── package.json
+└── README.md
+```
+
+---
+
+## 🌟 Highlights
+
+✅ React-Based Architecture
+
+✅ Firebase Authentication
+
+✅ CSV/XLS/XLSX Support
+
+✅ Dynamic Sheet Selection
+
+✅ Custom Range Processing
+
+✅ Interactive Charts
+
+✅ Client-Side Data Analysis
+
+✅ Responsive Dashboard Design
+
+✅ Fully Deployed Application
+
+---
+
+## 📸 Screenshots
+
+Add screenshots of:
+
+* Dashboard
+* Upload Interface
+* Data Preview
+* Chart Generation
+* Analytics View
+
+---
+
+## 🔮 Future Improvements
+
+* AI-Powered Insights
+* Dataset Exporting
+* Advanced Filtering
+* Statistical Analysis
+* Custom Dashboard Creation
+* Shareable Reports
+* Dark Mode Enhancements
+
+---
+
+## ⚙️ Installation
+
+Clone Repository
+
+```bash
+git clone https://github.com/yourusername/datasheet-analytics.git
+```
+
+Install Dependencies
 
 ```bash
 npm install
 ```
 
-### 2. Run the app
+Run Development Server
 
 ```bash
 npm start
 ```
 
-Open 👉 http://localhost:3000
+Build for Production
+
+```bash
+npm run build
+```
 
 ---
 
-## 🧪 How to Use
+## 👨‍💻 Developer
 
-1. Upload a CSV or Excel file
-2. Select sheet (for Excel files)
-3. Optionally define range & header row
-4. Preview your data
-5. Apply filters & explore insights
-6. Export results
+Built to simplify spreadsheet exploration and data visualization through a clean, modern, and interactive user experience.
 
----
-
-## 🎯 Project Vision
-
-This project is built to:
-
-* Simplify **data analysis for non-technical users**
-* Provide a **lightweight alternative to Excel tools**
-* Serve as a foundation for **AI-powered insights (future scope)**
-
----
-
-## 🚀 Future Enhancements
-
-* AI-based data summaries
-* Chart & graph visualizations
-* User authentication & saved datasets
-* Real-time collaboration
-
----
-
-## 👨‍💻 Author
-
-**Akshat Shukla**
-B.Tech IT | MERN Stack Developer
-
-🔗 GitHub: https://github.com/Akshat-shukla18
-
----
-
-## ⭐ Support
-
-If you like this project:
-
-* Star ⭐ the repository
-* Share it with others
-* Contribute to improvements
-
----
-
-## 📌 Note
-
-This project is actively evolving with new features and UI improvements aimed at making it **production-ready and client-deployable**.
+### 📊 Upload • Analyze • Visualize • Discover
