@@ -5,7 +5,6 @@
 🌐 Live Demo:  https://datasheeet.netlify.app/
 
 ---
-
 ## 🚀 Overview
 
 DataSheet Analytics is a modern React-based spreadsheet analysis platform that enables users to upload CSV and Excel files, explore data, generate visualizations, and extract meaningful insights directly in the browser.
